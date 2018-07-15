@@ -10,11 +10,11 @@ Jessica B. Lyons
 
 __Table of Contents__
 
-   * [Welcome!] (#welcome)
-   * [Logging into the AWS server] (#logging-into-the-aws-server)
-      * [Mac/Linux users] (#mac-linux-users)
-      * [Windows users] (#windows-users)
-   * [Using UNIX] (#using-unix)
+   * [Welcome!](#welcome)
+   * [Logging into the AWS server](#logging-into-the-aws-server)
+      * [Mac/Linux users](#mac-linux-users)
+      * [Windows users](#windows-users)
+   * [Using UNIX](#using-unix)
 
 ---
 
