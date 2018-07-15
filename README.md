@@ -2,10 +2,12 @@ Hands-on analysis of DArTseq data for linkage mapping
 ====================================================
 
 __Instructor__
-  Jessen V. Bredeson
+
+Jessen V. Bredeson
 
 __Co-Instructor__
-  Jessica B. Lyons
+
+Jessica B. Lyons
 
 
 ---
@@ -24,22 +26,22 @@ __Table of Contents__
 
 ---
 
-## Welcome!
-### About the course
+# Welcome!
+## About the course
 The **Hands-on analysis of DArTseq data for linkage mapping** course aims to teach biologists how to perform their own genetic linkage map analysis. This course uses DArTseq data, but the analysis techniques taught here are generally applicable to other forms of GBS/reduced-representation genotyping datasets.
 
 This course leverages the powerful tools freely available with the UNIX operating system (OS). In addition to using UNIX, students of the course will be introduced to utility programs written by the above instructors, and the [R statistical programming language](https://www.r-project.org). 
 
 
-### Course Topics
+## Course Topics
 * Reduced representation nextgen sequencing-based genotyping
 * DArTseq data and high throughput sequencing file formats
 * Working with genotyping data in the context of a genome assembly
 * Selecting high-quality segregating markers
 * Filtering individuals by evaluating relatedness
-* Linkage mapping with OneMap
+* Linkage mapping with R/OneMap
 
-### Important notes
+## Important notes
 * **Workshop participants must bring their own laptops**. Computation will be performed on Amazon web servers set up for the workshop and on the students' own laptops.
 
 * **Participants are expected to be familiar with the UNIX environment**. Please read the next section for important information.
@@ -53,15 +55,15 @@ As noted above, this course will rely heavily on use of the UNIX operating syste
 > NOTE: The PFB2017 course used the native Apple Mac OSX operating system, so please start at the section titled "OK. I've Logged in. What Now?" and ignore any prior sections. Instructions for logging into the AWS server are included below.
 
 
-## Logging into the AWS server
+# Logging into the AWS server
 
 Connecting to the AWS server requires a user-specific key file; **this file is your password, do not share it with others**. User key files will be sent to you individually in a separate email. 
 Please download your key file and save it to your home/user directory on your laptop.
 
-When following the instructions below, replace *familyname* with your family name (all lower-case characters, no spaces); *e.g.*, for Jessen Bredeson, *familyname*.pem would become *bredeson*.pem
+When following the instructions below, replace *familyname* with your family name (all lower-case characters, no spaces); *e.g.*, for Jessen Bredeson, *familyname*.pem would become bredeson.pem
 
 
-### Mac/Linux users:
+## Mac/Linux users:
 
 1. Locate and open the Terminal app.
     1. If you are using a Mac, hold *command* and press the *spacebar* to open up Spotlight. Then, Type "Terminal" into the Spotlight Search pane and press *Enter*.
@@ -80,7 +82,7 @@ When following the instructions below, replace *familyname* with your family nam
 > NOTE: you may receive a warning message that the authenticity of the host cannot be established. Please continue connecting by typing "yes" and pressing the Enter/Return key.
 
 
-### Windows users:
+## Windows users:
 
 Windows users will first need to install the PuTTY app in order to connect to the AWS server. Please go [here] (https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to download the *putty-0.70-installer.msi* installer image (download the 32-bit version unless you are sure you have a 64-bit processor and 64-bit Windows). The installer will be saved to your Downloads folder; double-click it and follow the install prompt.
 
