@@ -3,11 +3,13 @@ Hands-on analysis of DArTseq data for linkage mapping
 
 __Instructor__
 
-Jessen V. Bredeson
+Jessen V. Bredeson, University of California, Berkeley, CA, USA
+       <jessenbredeson@berkeley.edu>
 
 __Co-Instructor__
 
-Jessica B. Lyons
+Jessica B. Lyons, University of California, Berkeley, CA, USA
+	<jblyons@berkeley.edu>
 
 
 ---
