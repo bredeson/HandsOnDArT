@@ -2,15 +2,19 @@ Hands-on analysis of DArTseq data for linkage mapping
 ====================================================
 
 
-__Instructors__  
+__Instructor__  
 Jessen V. Bredeson
+
+__Co-Instructor__
 Jessica B. Lyons
 
 ---
 
 __Table of Contents__
 
-   * [Welcome!](#welcome)
+   * [About the course](#about-the-course)
+      * [Welcome!](#welcome)
+      * [Course Topics](#course-topics)
    * [Logging into the AWS server](#logging-into-the-aws-server)
       * [Mac/Linux users](#mac-linux-users)
       * [Windows users](#windows-users)
@@ -18,10 +22,26 @@ __Table of Contents__
 
 ---
 
-# Welcome!
-(What this course aims to teach)
+## About the course
+### Welcome!
+The "Hands-on analysis of DArTseq data for linkage mapping" course aims to teach biologists how to perform their own genetic linkage map estimation using DArTseq data. The analysis techniques taught here are generally applicable to other forms of GBS/reduced-representation genotyping datasets.
 
-(Preamble about how this course requires the use of a UNIX system)
+This course leverages the powerful tools freely available with the UNIX operating system (OS). In addition to using UNIX, students of the course will be introduced to utility programs written by the above instructors, and the [R statistical programming language](https://www.r-project.org). 
+
+### Course Topics
+* Reduced representation nextgen sequencing-based genotyping
+* DArTseq data and high throughput sequencing file formats
+* Working with genotyping data in the context of a genome assembly
+* Selecting high-quality segregating markers
+* Filtering individuals by evaluating relatedness
+* Linkage mapping with OneMap
+
+### Important notes
+* **Workshop participants must bring their own laptops**.
+     Computation will be performed on Amazon web servers set up for the workshop and on the students' laptops.
+
+* **Participants are expected to be familiar with the UNIX environment**.
+
 
 ## Logging into the AWS server
 
