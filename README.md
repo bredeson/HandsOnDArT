@@ -1,11 +1,11 @@
 Hands-on analysis of DArTseq data for linkage mapping
 ====================================================
 
-__Instructor__  
-Jessen V. Bredeson
+__Instructor__
+  Jessen V. Bredeson
 
 __Co-Instructor__
-Jessica B. Lyons
+  Jessica B. Lyons
 
 
 ---
