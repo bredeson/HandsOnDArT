@@ -40,10 +40,9 @@ This course leverages the powerful tools freely available with the UNIX operatin
 * Linkage mapping with OneMap
 
 ### Important notes
-* **Workshop participants must bring their own laptops**.
-     Computation will be performed on Amazon web servers set up for the workshop and on the students' own laptops.
+* **Workshop participants must bring their own laptops**. Computation will be performed on Amazon web servers set up for the workshop and on the students' own laptops.
 
-* **Participants are expected to be familiar with the UNIX environment, please read the next section for important information**.
+* **Participants are expected to be familiar with the UNIX environment**. Please read the next section for important information.
 
 
 # Using UNIX
