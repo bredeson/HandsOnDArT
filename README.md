@@ -7,7 +7,7 @@ University of California, Berkeley, CA, USA
 <jessenbredeson@berkeley.edu>
 
 __Co-Instructor__  
-Jessica B. Lyons
+Jessica B. Lyons  
 University of California, Berkeley, CA, USA  
 <jblyons@berkeley.edu>
 
