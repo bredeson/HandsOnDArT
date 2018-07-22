@@ -48,6 +48,10 @@ This course leverages the powerful tools freely available with the UNIX operatin
 * **Participants are expected to be familiar with the UNIX environment**. Please read the next section for important information.
 
 
+## Agenda
+Please see the PDF [herein](https://github.com/bredeson/HandsOnDArT/blob/master/HandsOnDArT-Agenda.pdf) for the course agenda.
+
+
 # Using UNIX
 As noted above, this course will rely heavily on use of the UNIX operating system, a powerful text-based computing environment; therefore, students will be expected to be proficient with some flavor of UNIX (BSD, SunOS, Linux, *etc*.). For convenience, this course will take advantage of Amazon Web Services (AWS) Elastic Computing 2 (EC2) infrastructure to allow all students access to an UNIX system to learn in. Students requiring an introduction to (or refresher of) UNIX should visit the following [PFB2017](https://github.com/bredeson/pfb2017/blob/master/README.md#ok-ive-logged-in--what-now) course website and complete the **UNIX 1** exercises. 
 
@@ -55,9 +59,6 @@ As noted above, this course will rely heavily on use of the UNIX operating syste
 
 > NOTE: The PFB2017 course used the native Apple Mac OSX operating system, so please start at the section titled "OK. I've Logged in. What Now?" and ignore any prior sections. Instructions for logging into the AWS server are included below.
 
-
-## Agenda
-Please see the PDF [herein](https://github.com/bredeson/HandsOnDArT/blob/master/HandsOnDArT-Agenda.pdf) for the course agenda.
 
 # Logging into the AWS server
 
