@@ -19,11 +19,11 @@ __Table of Contents__
       * [About the course](#about-the-course)
       * [Course Topics](#course-topics)
       * [Important notes](#important-notes)
+      * [Agenda](#agenda)
    * [Using UNIX](#using-unix)
    * [Logging into the AWS server](#logging-into-the-aws-server)
       * [Mac/Linux users](#mac-linux-users)
       * [Windows users](#windows-users)
-
 
 ---
 
@@ -55,6 +55,9 @@ As noted above, this course will rely heavily on use of the UNIX operating syste
 
 > NOTE: The PFB2017 course used the native Apple Mac OSX operating system, so please start at the section titled "OK. I've Logged in. What Now?" and ignore any prior sections. Instructions for logging into the AWS server are included below.
 
+
+## Agenda
+Please see the PDF [herein](https://github.com/bredeson/HandsOnDArT/blob/master/HandsOnDArT-Agenda.pdf) for the course agenda.
 
 # Logging into the AWS server
 
@@ -117,4 +120,5 @@ Steps 1–6 only need to be performed once for each key file. If you already hav
    2) Select *Session* in the *Category* tree, enter a name for the session in *Saved Sessions*, and click *Save*.
    
 10. Click the *Open* button to start the PuTTY session
+
 
