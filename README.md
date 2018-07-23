@@ -26,7 +26,7 @@ __Table of Contents__
       * [Windows users](#windows-users)
    * [Lecture Notes](#lecture-notes)
       * [UNIX and HTS and DArT files](#unix-and-hts-and-dart-files)
-
+      
 ---
 
 # Welcome!
@@ -129,4 +129,6 @@ Steps 1–6 only need to be performed once for each key file. If you already hav
 For lecture notes, please see the PDFs attached below, organized by lecture.
 
 ## UNIX and HTS and DArT files
-[Lecture notes and exercises](https://github.com/bredeson/HandsOnDArT/blob/master/slides/UNIX+HTS+DArT.pdf)
+* [Lecture notes and exercises](https://github.com/bredeson/HandsOnDArT/blob/master/lecture_notes_and_exercises/UNIX+HTS+DArT.pdf)
+* [Exercise solutions](https://github.com/bredeson/HandsOnDArT/blob/master/exercise_solutions/UNIX+HTS+DArT.solutions.pdf)
+
