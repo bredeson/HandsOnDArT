@@ -24,6 +24,7 @@ __Table of Contents__
    * [Logging into the AWS server](#logging-into-the-aws-server)
       * [Mac/Linux users](#mac-linux-users)
       * [Windows users](#windows-users)
+   * [UNIX and HTS/DArT files](#unix-and-hts-dart-files)
 
 ---
 
@@ -123,3 +124,8 @@ Steps 1–6 only need to be performed once for each key file. If you already hav
 10. Click the *Open* button to start the PuTTY session
 
 
+# Lecture Notes
+For lecture notes, please see the PDFs attached below, organized by lecture.
+
+## UNIX and HTS/DArT files
+[Lecture notes and exercises](https://github.com/bredeson/HandsOnDArT/blob/master/slides/UNIX+HTS+DArT.pdf)
