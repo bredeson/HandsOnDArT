@@ -22,10 +22,10 @@ __Table of Contents__
       * [Agenda](#agenda)
    * [Using UNIX](#using-unix)
    * [Logging into the AWS server](#logging-into-the-aws-server)
-      * [Mac/Linux users](#mac-linux-users)
+      * [Mac and Linux users](#mac-and-linux-users)
       * [Windows users](#windows-users)
    * [Lecture Notes](#lecture-notes)
-      * [UNIX and HTS/DArT files](#unix-and-hts-dart-files)
+      * [UNIX and HTS and DArT files](#unix-and-hts-and-dart-files)
 
 ---
 
@@ -70,7 +70,7 @@ Please download your key file and save it to your home/user directory on your la
 When following the instructions below, replace *familyname* with your family name (all lower-case characters, no spaces); *e.g.*, for Jessen Bredeson, *familyname*.pem would become bredeson.pem
 
 
-## Mac/Linux users:
+## Mac and Linux users:
 
 1. Locate and open the Terminal app.
     1. If you are using a Mac, hold *command* and press the *spacebar* to open up Spotlight. Then, Type "Terminal" into the Spotlight Search pane and press *Enter*.
@@ -128,5 +128,5 @@ Steps 1–6 only need to be performed once for each key file. If you already hav
 # Lecture Notes
 For lecture notes, please see the PDFs attached below, organized by lecture.
 
-## UNIX and HTS/DArT files
+## UNIX and HTS and DArT files
 [Lecture notes and exercises](https://github.com/bredeson/HandsOnDArT/blob/master/slides/UNIX+HTS+DArT.pdf)
