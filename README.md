@@ -24,7 +24,8 @@ __Table of Contents__
    * [Logging into the AWS server](#logging-into-the-aws-server)
       * [Mac/Linux users](#mac-linux-users)
       * [Windows users](#windows-users)
-   * [UNIX and HTS/DArT files](#unix-and-hts-dart-files)
+   * [Lecture Notes](#lecture-notes)
+      * [UNIX and HTS/DArT files](#unix-and-hts-dart-files)
 
 ---
 
