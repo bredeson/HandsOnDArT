@@ -26,7 +26,8 @@ __Table of Contents__
       * [Windows users](#windows-users)
    * [Lecture Notes](#lecture-notes)
       * [UNIX and HTS and DArT files](#unix-and-hts-and-dart-files)
-      
+      * [DArT files and tag mapping and filtering](#dart-files-and-tag-mapping-and-filtering)
+
 ---
 
 # Welcome!
@@ -132,3 +133,5 @@ For lecture notes, please see the PDFs attached below, organized by lecture.
 * [Lecture notes and exercises](https://github.com/bredeson/HandsOnDArT/blob/master/lecture_notes_and_exercises/UNIX+HTS+DArT.pdf)
 * [Exercise solutions](https://github.com/bredeson/HandsOnDArT/blob/master/exercise_solutions/UNIX+HTS+DArT.solutions.pdf)
 
+## DArT files and tag mapping and filtering
+* [Lecture notes and exercises](https://github.com/bredeson/HandsOnDArT/blob/master/lecture_notes_and_exercises/DArT+tags+filtering.pdf)
