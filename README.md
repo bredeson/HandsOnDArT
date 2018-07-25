@@ -27,6 +27,8 @@ __Table of Contents__
    * [Lecture Notes](#lecture-notes)
       * [UNIX and HTS and DArT files](#unix-and-hts-and-dart-files)
       * [DArT files and tag mapping and filtering](#dart-files-and-tag-mapping-and-filtering)
+      * [Filtering and imputation](#filtering-and-imputation)
+
 
 ---
 
@@ -135,3 +137,6 @@ For lecture notes, please see the PDFs attached below, organized by lecture.
 
 ## DArT files and tag mapping and filtering
 * [Lecture notes and exercises](https://github.com/bredeson/HandsOnDArT/blob/master/lecture_notes_and_exercises/DArT+tags+filtering.pdf)
+
+## Filtering and imputation
+* [Lecture notes and exercises](https://github.com/bredeson/HandsOnDArT/blob/master/lecture_notes_and_exercises/filtering+phasing+imputation.pdf)
