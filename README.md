@@ -28,7 +28,7 @@ __Table of Contents__
       * [UNIX and HTS and DArT files](#unix-and-hts-and-dart-files)
       * [DArT files and tag mapping and filtering](#dart-files-and-tag-mapping-and-filtering)
       * [Filtering and imputation](#filtering-and-imputation)
-
+      * [R and OneMap 1](#r-and-onemap-1)
 
 ---
 
@@ -140,3 +140,6 @@ For lecture notes, please see the PDFs attached below, organized by lecture.
 
 ## Filtering and imputation
 * [Lecture notes and exercises](https://github.com/bredeson/HandsOnDArT/blob/master/lecture_notes_and_exercises/filtering+phasing+imputation.pdf)
+
+## R and OneMap 1
+* [Lecture notes and exercises](https://github.com/bredeson/HandsOnDArT/blob/master/lecture_notes_and_exercises/R+OneMap1.pdf)
