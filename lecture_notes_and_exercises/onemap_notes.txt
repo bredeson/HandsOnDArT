@@ -1,0 +1,127 @@
+
+library('onemap')
+
+# These notes are largely based on the OneMap tutorial:
+# http://augustogarcia.me/onemap/vignettes_highres/Outcrossing_Populations.html#content
+# With contributions from Alex Brandt and Jessen V. Bredeson from UC Berkeley
+
+
+# DEFINE A USEFUL FUNCTIONS
+# =========================
+plot_cM_vs_coordinates <- function(my_map, my_two_points, main_scaffold = NA, file=NA) {
+  # assumes the marker names are formatted as Chrom:Pos
+  if (is.na(file)) {
+    stop("must provide a file name via file=");
+  }
+  uniquely_mapped <- names(my_two_points$analysis$RR[2,])[my_map$seq.num]
+  distances <- c(0.0, cumsum(kosambi(my_map$seq.rf)))
+  
+  # OLD: choose largest chromosme
+  extract_pos = function(my_str) {
+    tokens = strsplit(my_str, "\\:")[[1]]
+    return(paste(tokens[length(tokens)], collapse = "."))
+  }
+  
+  extract_chr = function(my_str) {
+    tokens = strsplit(my_str, "\\:")[[1]]
+    return(paste(tokens[1:(length(tokens)-1)], collapse = "."))
+  }
+  
+  chromosomes <- unlist(lapply(uniquely_mapped, extract_chr))
+  
+  genetic_pos <- as.integer(unlist(lapply(uniquely_mapped, extract_pos))) / 1000000
+  
+  if (is.na(main_scaffold)) {
+    main_scaffold <- names(sort(table(chromosomes), decreasing=TRUE)[1])
+  }
+  
+  gp_subset <- genetic_pos[chromosomes == main_scaffold]
+  dist_subset <- distances[chromosomes == main_scaffold]
+  
+  pdf(paste(file,main_scaffold,'pdf', sep='.'))
+  plot(x=gp_subset, y=dist_subset, ylab='cM', xlab='Genomic Coordinates (Mb)', 
+       main = paste("Genetic Map Distance vs. Genomic Position\n for", main_scaffold))
+  invisible(dev.off())
+  # lines(supsmu(genetic_pos, distances))
+}
+
+
+# START ANALYSIS BELOW
+# ====================
+
+cross = read_onemap("~/onemap_demo/", "chr.snps.raw")
+out.prefix = "YOUR_OUTFILE_PREFIX"
+max.lod = 20
+
+
+# Save a plot of the genotype color matrix
+ggplot2::ggsave("plot_genotypes.pdf", plot(cross, all=FALSE), width=7, height=11, dpi=300)
+
+ggplot2::ggsave("plot_segregation.pdf", plot(test_segregation(cross)), width=7, height=11, dpi=300)
+
+
+
+lod.scores = seq(1, max.lod)
+lod.suggested = suggest_lod(cross)
+lod.linkage.groups = c()
+
+# pre-calculate pair-wise recombination fractions
+recombination.fractions = rf_2pts(cross, LOD=0, rf.max=0.5);
+
+# Count the number groups over a range of LOD scores
+for (min.lod in lod.scores) { 
+   markers = make_seq(recombination.fractions, "all");
+   linkage.groups = group(markers, LOD=min.lod); 
+   lod.linkage.groups = append(lod.linkage.groups, linkage.groups$n.groups)
+}
+
+# The "right" number of linkage groups will result because of 
+# stable linkage from markers belonging to the same chromosome,
+# so the expectation is that as we increase the min.lod, the
+# number of linkage groups will reach a stabile plateau. If
+# we increase min.lod too much, the linkage groups fall apart
+# into many smaller linkage groups
+plot(lod.scores, lod.linkage.groups, pch=20, type='b', xlab="Minimum LOD Score", ylab="Number of linkage groups", main="Number of linkage groups vs LOD score")
+abline(v=lod.suggested, lty=3)
+
+best.lod = ASSIGN_YOUR_BEST_LOD_VALUE
+
+
+markers = make_seq(recombination.fractions, "all")
+linkage.groups = group(markers, LOD=best.lod)
+group.table = vector("list", linkage.groups$n.groups)
+
+# Let's get an idea of how long the linkage groups are. Are they very inflated? 
+# If so, it usually indicates excessive genotyping errors
+# plot(sort(table(linkage.groups$groups[linkage.groups$groups != 0]), decreasing = TRUE))
+
+
+for (i in seq(1, linkage.groups$n.groups)) {
+  marker.ord.i = order_seq(make_seq(linkage.groups, i), n.init=7)
+  marker.map.i = make_seq(marker.ord.i, "force")
+  group.table[[i]] = marker.map.i
+}
+
+for (i in seq(1,length(group.table))) { 
+  write_map(group.table[[i]], file=paste(out.prefix,i, "map", sep='.'));
+ 
+  pdf(paste(out.prefix, i, "rf.pdf", sep='.'));
+  rf_graph_table(group.table[[i]], inter=F, graph.LOD=F, n.colors=2);
+  invisible(dev.off());
+
+  pdf(paste(out.prefix, i, "lod.pdf", sep='.'));
+  rf_graph_table(group.table[[i]], inter=F, graph.LOD=T, n.colors=2);
+  invisible(dev.off());
+
+  plot_cM_vs_coordinates(group.table[[i]], recombination.fractions, file=out.prefix)
+}
+
+pdf(paste(out.prefix, "map.pdf", sep='.'));
+draw_map(group.table, names = TRUE, cex.mrk=0.25);
+invisible(dev.off());
+
+
+# For binning markers before 
+# bins = find_bins(cross, exact = FALSE)
+# bins_example = create_data_bins(cross, bins)
+
