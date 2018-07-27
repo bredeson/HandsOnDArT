@@ -29,7 +29,7 @@ __Table of Contents__
       * [DArT files and tag mapping and filtering](#dart-files-and-tag-mapping-and-filtering)
       * [Filtering and imputation](#filtering-and-imputation)
       * [R and OneMap 1](#r-and-onemap-1)
-
+      * [R and OneMap 2](#r-and-onemap-2)
 ---
 
 # Welcome!
@@ -143,3 +143,6 @@ For lecture notes, please see the PDFs attached below, organized by lecture.
 
 ## R and OneMap 1
 * [Lecture notes and exercises](https://github.com/bredeson/HandsOnDArT/blob/master/lecture_notes_and_exercises/R+OneMap1.pdf)
+
+## R and OneMap 2
+* [Lecture notes and exercises](https://github.com/bredeson/HandsOnDArT/blob/master/lecture_notes_and_exercises/R+OneMap2.pdf)
