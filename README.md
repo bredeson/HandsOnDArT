@@ -20,6 +20,7 @@ __Table of Contents__
       * [Course Topics](#course-topics)
       * [Important notes](#important-notes)
       * [Agenda](#agenda)
+      * [Software](#software)
    * [Using UNIX](#using-unix)
    * [Logging into the AWS server](#logging-into-the-aws-server)
       * [Mac and Linux users](#mac-and-linux-users)
@@ -55,6 +56,13 @@ This course leverages the powerful tools freely available with the UNIX operatin
 
 ## Agenda
 Please see the PDF [herein](https://github.com/bredeson/HandsOnDArT/blob/master/HandsOnDArT-Agenda.pdf) for the course agenda.
+
+## Software
+The course relies on various tools, all of which are freely available for download. Please follow the install instructions for each package:
+* [VCFtools](https://vcftools.github.io)
+* [R](https://www.r-project.org)
+* [maptk](https://bitbucket.org/rokhsar-lab/gbs-analysis/src/master)
+* [BWA](http://bio-bwa.sourceforge.net)
 
 
 # Using UNIX
