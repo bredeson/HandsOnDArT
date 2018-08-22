@@ -31,6 +31,7 @@ __Table of Contents__
       * [Filtering and imputation](#filtering-and-imputation)
       * [R and OneMap 1](#r-and-onemap-1)
       * [R and OneMap 2](#r-and-onemap-2)
+   * [Final slides and notes](#final-slides-and-notes)
 ---
 
 # Welcome!
@@ -58,7 +59,11 @@ This course leverages the powerful tools freely available with the UNIX operatin
 Please see the PDF [herein](https://github.com/bredeson/HandsOnDArT/blob/master/HandsOnDArT-Agenda.pdf) for the course agenda.
 
 ## Software
-The course relies on various tools, all of which are freely available for download. Please follow the install instructions for each package:
+The course relies on various software packages, all of which are freely-available for download. Each package has its own dependencies and install instructions, so please visit the URL for each package and follow its specific instructions.
+
+>NOTE: MacOS X/Darwin users will require `make` and `gcc`, available with the [Xcode Command Line Tools]() from the Apple Developer website.
+>NOTE: Windows PC users will require [Cygwin](), a UNIX environment emulator for the Windows command line.
+
 * [VCFtools](https://vcftools.github.io)
 * [R](https://www.r-project.org)
 * [maptk](https://bitbucket.org/rokhsar-lab/gbs-analysis/src/master)
@@ -154,3 +159,8 @@ For lecture notes, please see the PDFs attached below, organized by lecture.
 
 ## R and OneMap 2
 * [Lecture notes and exercises](https://github.com/bredeson/HandsOnDArT/blob/master/lecture_notes_and_exercises/R+OneMap2.pdf)
+
+## Final slides and Notes
+* [Download from here](https://github.com/bredeson/HandsOnDArT/blob/master/lecture_notes_and_exercises/HandsOnDArT-Complete-FINAL.pdf)
+* [MapTK commands](https://github.com/bredeson/HandsOnDArT/blob/master/lecture_notes_and_exercises/maptk_notes.txt)
+* [OneMap commands](https://github.com/bredeson/HandsOnDArT/blob/master/lecture_notes_and_exercises/onemap_notes.txt)

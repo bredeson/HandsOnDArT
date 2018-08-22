@@ -1,0 +1,1860 @@
+{
+   "orders" : {
+      "DY17-1234" : {
+         "clientemail" : "your@address.org",
+         "sequencing" : {
+            "1" : {
+               "HiSeq 2500" : "2017-06-02 16:14:10"
+            },
+            "2" : {
+               "HiSeq 2500" : "2017-06-23 14:47:38"
+            }
+         },
+         "orderdatetime" : "2017-05-05 03:19:36",
+         "clientname" : "Your Name",
+         "productname" : "DArTseq (1.0)"
+      }
+   },
+   "errormsg" : "OK",
+   "error" : 0,
+   "datafiles" : {
+      "Report_DY17-1234_SilicoDArT.csv" : {
+         "filetype" : "SilicoDArT",
+         "exportdetails" : {
+            "metacolsdetails" : {
+               "Reproducibility" : "The proportion of technical replicate assay pairs for which the marker score is consistent",
+               "Qpmr" : "The average of the normalized non-zero tag read counts divided by the standard deviation of the normalized non-zero tag read counts (If standard deviation is zero or near zero, the Qpmr value will be 100).",
+               "PIC" : "Polymorphism Information Content",
+               "CallRate" : "The proportion of samples for which the genotype call is either \"1\" or \"0\", rather than \"-\" ",
+               "OneRatio" : "The proportion of samples for which the genotype score is \"1\" ",
+               "AvgReadDepth" : "The sum of the tag read counts for all samples, divided by the number of samples with non-zero tag read counts.",
+               "AlleleSequence" : "The sequence of the tag which is present in samples with genotype score \"1\"",
+               "TrimmedSequence" : "Same as the full sequence, but with removed adapters in short marker tags",
+               "CloneID" : "Unique identifier of the sequence tag",
+               "StDevReadDepth" : "The standard deviation of the number of tag reads for all samples with non-zero tag read counts"
+            },
+            "headerrowsnumber" : 7,
+            "lastdatacol" : 102,
+            "notdescribedmetacolumns" : 0,
+            "idcolposition" : 1,
+            "firstdatacol" : 23,
+            "alncoldetails" : {
+               "Chrom_" : "Contig(s) with the best alignment of marker / tag to an existing model genome",
+               "AlnEvalue_" : "E value of the best alignment to an existing model genome",
+               "ChromPos_" : "Position(s) on contig(s) with the best alignment of marker / tag to an existing model genome",
+               "AlnCnt_" : "Total count of aligning markers / tags with selection criteria described below"
+            },
+            "metacolspositions" : [
+               2,
+               3,
+               4,
+               5,
+               6,
+               7,
+               8,
+               9,
+               10,
+               11,
+               12,
+               13,
+               14,
+               15,
+               16,
+               17,
+               18,
+               19,
+               20,
+               21,
+               22
+            ],
+            "headerrowsdescr" : {
+               "6" : "genotype name",
+               "4" : "well column position",
+               "1" : "DArT plate barcode",
+               "3" : "well row position",
+               "0" : "Order number where sample belongs to - important for multi-orders reports",
+               "2" : "client plate barcode",
+               "5" : "sample comments"
+            },
+            "modelreferences" : {
+               "Assembly1" : "",
+               "Assembly2" : "",
+               "Assembly3" : ""
+            }
+         },
+         "description" : "SilicoDArT Format: SilicoDArTs are scored in a binary fashion, representing genetically \"dominant\" markers, with \"1\"=Presence and \"0\"=Absence of a restriction fragment with the marker sequence in genomic representation of the sample. \"-\" represents calls with non-zero counts, but too low counts to score confidently as \"1\" (often representing heterozygotes)",
+         "exportsnp" : {},
+         "sampleheaders" : {
+            "notreportedsamples" : {},
+            "headers" : {
+               "904317125001_G_6" : [
+                  "904317125001",
+                  "1",
+                  "G",
+                  "6",
+                  "Progeny-48",
+                  "YourSpecies",
+                  "745749",
+                  "Cross  Tube 47",
+                  "2712"
+               ],
+               "904317125001_E_3" : [
+                  "904317125001",
+                  "1",
+                  "E",
+                  "3",
+                  "Progeny-89",
+                  "YourSpecies",
+                  "745723",
+                  "Cross  Tube 21",
+                  "2712"
+               ],
+               "904317125001_D_8" : [
+                  "904317125001",
+                  "1",
+                  "D",
+                  "8",
+                  "Progeny-54",
+                  "YourSpecies",
+                  "745762",
+                  "Cross  Tube 60",
+                  "2712"
+               ],
+               "904317125001_A_10" : [
+                  "904317125001",
+                  "1",
+                  "A",
+                  "10",
+                  "Parent1",
+                  "YourSpecies",
+                  "745775",
+                  "Cross  Tube 73. Parent.",
+                  "2712"
+               ],
+               "904317125001_D_4" : [
+                  "904317125001",
+                  "1",
+                  "D",
+                  "4",
+                  "Progeny-68",
+                  "YourSpecies",
+                  "745730",
+                  "Cross  Tube 28",
+                  "2712"
+               ],
+               "904317125001_B_7" : [
+                  "904317125001",
+                  "1",
+                  "B",
+                  "7",
+                  "Progeny-136",
+                  "YourSpecies",
+                  "745752",
+                  "Cross  Tube 50",
+                  "2712"
+               ],
+               "904317125001_E_9" : [
+                  "904317125001",
+                  "1",
+                  "E",
+                  "9",
+                  "Progeny-26",
+                  "YourSpecies",
+                  "745771",
+                  "Cross  Tube 69",
+                  "2712"
+               ],
+               "904317125001_G_8" : [
+                  "904317125001",
+                  "1",
+                  "G",
+                  "8",
+                  "Progeny-3",
+                  "YourSpecies",
+                  "745765",
+                  "Cross  Tube 63",
+                  "2712"
+               ],
+               "904317125001_B_5" : [
+                  "904317125001",
+                  "1",
+                  "B",
+                  "5",
+                  "Progeny-19",
+                  "YourSpecies",
+                  "745736",
+                  "Cross  Tube 34",
+                  "2712"
+               ],
+               "904317125001_G_7" : [
+                  "904317125001",
+                  "1",
+                  "G",
+                  "7",
+                  "Progeny-33",
+                  "YourSpecies",
+                  "745757",
+                  "Cross  Tube 55",
+                  "2712"
+               ],
+               "904317125001_H_4" : [
+                  "904317125001",
+                  "1",
+                  "H",
+                  "4",
+                  "Progeny-141",
+                  "YourSpecies",
+                  "745734",
+                  "Cross  Tube 32",
+                  "2712"
+               ],
+               "904317125001_F_9" : [
+                  "904317125001",
+                  "1",
+                  "F",
+                  "9",
+                  "Progeny-31",
+                  "YourSpecies",
+                  "745772",
+                  "Cross  Tube 70",
+                  "2712"
+               ],
+               "904317125001_F_7" : [
+                  "904317125001",
+                  "1",
+                  "F",
+                  "7",
+                  "Progeny-157",
+                  "YourSpecies",
+                  "745756",
+                  "Cross  Tube 54",
+                  "2712"
+               ],
+               "904317125001_E_6" : [
+                  "904317125001",
+                  "1",
+                  "E",
+                  "6",
+                  "Progeny-73",
+                  "YourSpecies",
+                  "745747",
+                  "Cross  Tube 45",
+                  "2712"
+               ],
+               "904317125001_H_5" : [
+                  "904317125001",
+                  "1",
+                  "H",
+                  "5",
+                  "Progeny-140",
+                  "YourSpecies",
+                  "745742",
+                  "Cross  Tube 40",
+                  "2712"
+               ],
+               "904317125001_G_3" : [
+                  "904317125001",
+                  "1",
+                  "G",
+                  "3",
+                  "Progeny-4",
+                  "YourSpecies",
+                  "745725",
+                  "Cross  Tube 23",
+                  "2712"
+               ],
+               "904317125001_D_2" : [
+                  "904317125001",
+                  "1",
+                  "D",
+                  "2",
+                  "Progeny-120",
+                  "YourSpecies",
+                  "745714",
+                  "Cross  Tube 12",
+                  "2712"
+               ],
+               "904317125001_C_3" : [
+                  "904317125001",
+                  "1",
+                  "C",
+                  "3",
+                  "Progeny-21",
+                  "YourSpecies",
+                  "745721",
+                  "Cross  Tube 19",
+                  "2712"
+               ],
+               "904317125001_B_8" : [
+                  "904317125001",
+                  "1",
+                  "B",
+                  "8",
+                  "Progeny-15",
+                  "YourSpecies",
+                  "745760",
+                  "Cross  Tube 58",
+                  "2712"
+               ],
+               "904317125001_G_9" : [
+                  "904317125001",
+                  "1",
+                  "G",
+                  "9",
+                  "Progeny-81",
+                  "YourSpecies",
+                  "745773",
+                  "Cross  Tube 71",
+                  "2712"
+               ],
+               "904317125001_E_8" : [
+                  "904317125001",
+                  "1",
+                  "E",
+                  "8",
+                  "Progeny-51",
+                  "YourSpecies",
+                  "745763",
+                  "Cross  Tube 61",
+                  "2712"
+               ],
+               "904317125001_H_2" : [
+                  "904317125001",
+                  "1",
+                  "H",
+                  "2",
+                  "Progeny-43",
+                  "YourSpecies",
+                  "745718",
+                  "Cross  Tube 16",
+                  "2712"
+               ],
+               "904317125001_B_10" : [
+                  "904317125001",
+                  "1",
+                  "B",
+                  "10",
+                  "Parent2",
+                  "YourSpecies",
+                  "745776",
+                  "Cross  Tube 74. Parent.",
+                  "2712"
+               ],
+               "904317125001_F_1" : [
+                  "904317125001",
+                  "1",
+                  "F",
+                  "1",
+                  "Progeny-44",
+                  "YourSpecies",
+                  "745708",
+                  "Cross  Tube 6",
+                  "2712"
+               ],
+               "904317125001_A_5" : [
+                  "904317125001",
+                  "1",
+                  "A",
+                  "5",
+                  "Progeny-87",
+                  "YourSpecies",
+                  "745735",
+                  "Cross  Tube 33",
+                  "2712"
+               ],
+               "904317125001_C_8" : [
+                  "904317125001",
+                  "1",
+                  "C",
+                  "8",
+                  "Progeny-94",
+                  "YourSpecies",
+                  "745761",
+                  "Cross  Tube 59",
+                  "2712"
+               ],
+               "904317125001_A_3" : [
+                  "904317125001",
+                  "1",
+                  "A",
+                  "3",
+                  "Progeny-30",
+                  "YourSpecies",
+                  "745719",
+                  "Cross  Tube 17",
+                  "2712"
+               ],
+               "904317125001_B_4" : [
+                  "904317125001",
+                  "1",
+                  "B",
+                  "4",
+                  "Progeny-103",
+                  "YourSpecies",
+                  "745728",
+                  "Cross  Tube 26",
+                  "2712"
+               ],
+               "904317125001_H_7" : [
+                  "904317125001",
+                  "1",
+                  "H",
+                  "7",
+                  "Progeny-133",
+                  "YourSpecies",
+                  "745758",
+                  "Cross  Tube 56",
+                  "2712"
+               ],
+               "904317125001_C_4" : [
+                  "904317125001",
+                  "1",
+                  "C",
+                  "4",
+                  "Progeny-37",
+                  "YourSpecies",
+                  "745729",
+                  "Cross  Tube 27",
+                  "2712"
+               ],
+               "904317125001_B_2" : [
+                  "904317125001",
+                  "1",
+                  "B",
+                  "2",
+                  "Progeny-130",
+                  "YourSpecies",
+                  "745712",
+                  "Cross  Tube 10",
+                  "2712"
+               ],
+               "904317125001_A_4" : [
+                  "904317125001",
+                  "1",
+                  "A",
+                  "4",
+                  "Progeny-23",
+                  "YourSpecies",
+                  "745727",
+                  "Cross  Tube 25",
+                  "2712"
+               ],
+               "904317125001_H_8" : [
+                  "904317125001",
+                  "1",
+                  "H",
+                  "8",
+                  "Progeny-46",
+                  "YourSpecies",
+                  "745766",
+                  "Cross  Tube 64",
+                  "2712"
+               ],
+               "904317125001_H_6" : [
+                  "904317125001",
+                  "1",
+                  "H",
+                  "6",
+                  "Progeny-29",
+                  "YourSpecies",
+                  "745750",
+                  "Cross  Tube 48",
+                  "2712"
+               ],
+               "904317125001_H_1" : [
+                  "904317125001",
+                  "1",
+                  "H",
+                  "1",
+                  "Progeny-39",
+                  "YourSpecies",
+                  "745710",
+                  "Cross  Tube 8",
+                  "2712"
+               ],
+               "904317125001_B_6" : [
+                  "904317125001",
+                  "1",
+                  "B",
+                  "6",
+                  "Progeny-119",
+                  "YourSpecies",
+                  "745744",
+                  "Cross  Tube 42",
+                  "2712"
+               ],
+               "904317125001_D_5" : [
+                  "904317125001",
+                  "1",
+                  "D",
+                  "5",
+                  "Progeny-99",
+                  "YourSpecies",
+                  "745738",
+                  "Cross  Tube 36",
+                  "2712"
+               ],
+               "904317125001_H_9" : [
+                  "904317125001",
+                  "1",
+                  "H",
+                  "9",
+                  "Progeny-5",
+                  "YourSpecies",
+                  "745774",
+                  "Cross  Tube 72",
+                  "2712"
+               ],
+               "904317125001_E_4" : [
+                  "904317125001",
+                  "1",
+                  "E",
+                  "4",
+                  "Progeny-2",
+                  "YourSpecies",
+                  "745731",
+                  "Cross  Tube 29",
+                  "2712"
+               ],
+               "904317125001_A_2" : [
+                  "904317125001",
+                  "1",
+                  "A",
+                  "2",
+                  "Progeny-50",
+                  "YourSpecies",
+                  "745711",
+                  "Cross  Tube 9",
+                  "2712"
+               ],
+               "904317125001_F_6" : [
+                  "904317125001",
+                  "1",
+                  "F",
+                  "6",
+                  "Progeny-67",
+                  "YourSpecies",
+                  "745748",
+                  "Cross  Tube 46",
+                  "2712"
+               ],
+               "904317125001_G_1" : [
+                  "904317125001",
+                  "1",
+                  "G",
+                  "1",
+                  "Progeny-124",
+                  "YourSpecies",
+                  "745709",
+                  "Cross  Tube 7",
+                  "2712"
+               ],
+               "904317125001_B_3" : [
+                  "904317125001",
+                  "1",
+                  "B",
+                  "3",
+                  "Progeny-76",
+                  "YourSpecies",
+                  "745720",
+                  "Cross  Tube 18",
+                  "2712"
+               ],
+               "904317125001_C_7" : [
+                  "904317125001",
+                  "1",
+                  "C",
+                  "7",
+                  "Progeny-127",
+                  "YourSpecies",
+                  "745753",
+                  "Cross  Tube 51",
+                  "2712"
+               ],
+               "904317125001_F_3" : [
+                  "904317125001",
+                  "1",
+                  "F",
+                  "3",
+                  "Progeny-145",
+                  "YourSpecies",
+                  "745724",
+                  "Cross  Tube 22",
+                  "2712"
+               ],
+               "904317125001_D_1" : [
+                  "904317125001",
+                  "1",
+                  "D",
+                  "1",
+                  "Progeny-32",
+                  "YourSpecies",
+                  "745706",
+                  "Cross  Tube 4",
+                  "2712"
+               ],
+               "904317125001_F_2" : [
+                  "904317125001",
+                  "1",
+                  "F",
+                  "2",
+                  "Progeny-8",
+                  "YourSpecies",
+                  "745716",
+                  "Cross  Tube 14",
+                  "2712"
+               ],
+               "904317125001_C_1" : [
+                  "904317125001",
+                  "1",
+                  "C",
+                  "1",
+                  "Progeny-115",
+                  "YourSpecies",
+                  "745705",
+                  "Cross  Tube 3",
+                  "2712"
+               ],
+               "904317125001_E_7" : [
+                  "904317125001",
+                  "1",
+                  "E",
+                  "7",
+                  "Progeny-40",
+                  "YourSpecies",
+                  "745755",
+                  "Cross  Tube 53",
+                  "2712"
+               ],
+               "904317125001_G_5" : [
+                  "904317125001",
+                  "1",
+                  "G",
+                  "5",
+                  "Progeny-111",
+                  "YourSpecies",
+                  "745741",
+                  "Cross  Tube 39",
+                  "2712"
+               ],
+               "904317125001_F_8" : [
+                  "904317125001",
+                  "1",
+                  "F",
+                  "8",
+                  "Progeny-85",
+                  "YourSpecies",
+                  "745764",
+                  "Cross  Tube 62",
+                  "2712"
+               ],
+               "904317125001_F_5" : [
+                  "904317125001",
+                  "1",
+                  "F",
+                  "5",
+                  "Progeny-131",
+                  "YourSpecies",
+                  "745740",
+                  "Cross  Tube 38",
+                  "2712"
+               ],
+               "904317125001_G_4" : [
+                  "904317125001",
+                  "1",
+                  "G",
+                  "4",
+                  "Progeny-142",
+                  "YourSpecies",
+                  "745733",
+                  "Cross  Tube 31",
+                  "2712"
+               ],
+               "904317125001_C_9" : [
+                  "904317125001",
+                  "1",
+                  "C",
+                  "9",
+                  "Progeny-143",
+                  "YourSpecies",
+                  "745769",
+                  "Cross  Tube 67",
+                  "2712"
+               ],
+               "904317125001_E_1" : [
+                  "904317125001",
+                  "1",
+                  "E",
+                  "1",
+                  "Progeny-151",
+                  "YourSpecies",
+                  "745707",
+                  "Cross  Tube 5",
+                  "2712"
+               ],
+               "904317125001_D_3" : [
+                  "904317125001",
+                  "1",
+                  "D",
+                  "3",
+                  "Progeny-137",
+                  "YourSpecies",
+                  "745722",
+                  "Cross  Tube 20",
+                  "2712"
+               ],
+               "904317125001_C_5" : [
+                  "904317125001",
+                  "1",
+                  "C",
+                  "5",
+                  "Progeny-53",
+                  "YourSpecies",
+                  "745737",
+                  "Cross  Tube 35",
+                  "2712"
+               ],
+               "904317125001_A_7" : [
+                  "904317125001",
+                  "1",
+                  "A",
+                  "7",
+                  "Progeny-27",
+                  "YourSpecies",
+                  "745751",
+                  "Cross  Tube 49",
+                  "2712"
+               ],
+               "904317125001_C_2" : [
+                  "904317125001",
+                  "1",
+                  "C",
+                  "2",
+                  "Progeny-77",
+                  "YourSpecies",
+                  "745713",
+                  "Cross  Tube 11",
+                  "2712"
+               ],
+               "904317125001_D_6" : [
+                  "904317125001",
+                  "1",
+                  "D",
+                  "6",
+                  "Progeny-102",
+                  "YourSpecies",
+                  "745746",
+                  "Cross  Tube 44",
+                  "2712"
+               ],
+               "904317125001_B_1" : [
+                  "904317125001",
+                  "1",
+                  "B",
+                  "1",
+                  "Progeny-108",
+                  "YourSpecies",
+                  "745704",
+                  "Cross  Tube 2",
+                  "2712"
+               ],
+               "904317125001_A_6" : [
+                  "904317125001",
+                  "1",
+                  "A",
+                  "6",
+                  "Progeny-113",
+                  "YourSpecies",
+                  "745743",
+                  "Cross  Tube 41",
+                  "2712"
+               ],
+               "904317125001_D_7" : [
+                  "904317125001",
+                  "1",
+                  "D",
+                  "7",
+                  "Progeny-20",
+                  "YourSpecies",
+                  "745754",
+                  "Cross  Tube 52",
+                  "2712"
+               ],
+               "904317125001_A_8" : [
+                  "904317125001",
+                  "1",
+                  "A",
+                  "8",
+                  "Progeny-139",
+                  "YourSpecies",
+                  "745759",
+                  "Cross  Tube 57",
+                  "2712"
+               ],
+               "904317125001_E_5" : [
+                  "904317125001",
+                  "1",
+                  "E",
+                  "5",
+                  "Progeny-59",
+                  "YourSpecies",
+                  "745739",
+                  "Cross  Tube 37",
+                  "2712"
+               ],
+               "904317125001_A_9" : [
+                  "904317125001",
+                  "1",
+                  "A",
+                  "9",
+                  "Progeny-125",
+                  "YourSpecies",
+                  "745767",
+                  "Cross  Tube 65",
+                  "2712"
+               ],
+               "904317125001_G_2" : [
+                  "904317125001",
+                  "1",
+                  "G",
+                  "2",
+                  "Progeny-154",
+                  "YourSpecies",
+                  "745717",
+                  "Cross  Tube 15",
+                  "2712"
+               ],
+               "904317125001_H_3" : [
+                  "904317125001",
+                  "1",
+                  "H",
+                  "3",
+                  "Progeny-16",
+                  "YourSpecies",
+                  "745726",
+                  "Cross  Tube 24",
+                  "2712"
+               ],
+               "904317125001_E_2" : [
+                  "904317125001",
+                  "1",
+                  "E",
+                  "2",
+                  "Progeny-149",
+                  "YourSpecies",
+                  "745715",
+                  "Cross  Tube 13",
+                  "2712"
+               ],
+               "904317125001_C_6" : [
+                  "904317125001",
+                  "1",
+                  "C",
+                  "6",
+                  "Progeny-56",
+                  "YourSpecies",
+                  "745745",
+                  "Cross  Tube 43",
+                  "2712"
+               ],
+               "904317125001_D_9" : [
+                  "904317125001",
+                  "1",
+                  "D",
+                  "9",
+                  "Progeny-11",
+                  "YourSpecies",
+                  "745770",
+                  "Cross  Tube 68",
+                  "2712"
+               ],
+               "904317125001_B_9" : [
+                  "904317125001",
+                  "1",
+                  "B",
+                  "9",
+                  "Progeny-23",
+                  "YourSpecies",
+                  "745768",
+                  "Cross  Tube 66",
+                  "2712"
+               ],
+               "904317125001_A_1" : [
+                  "904317125001",
+                  "1",
+                  "A",
+                  "1",
+                  "Progeny-18",
+                  "YourSpecies",
+                  "745703",
+                  "Cross  Tube 1",
+                  "2712"
+               ],
+               "904317125001_F_4" : [
+                  "904317125001",
+                  "1",
+                  "F",
+                  "4",
+                  "Progeny-112",
+                  "YourSpecies",
+                  "745732",
+                  "Cross  Tube 30",
+                  "2712"
+               ]
+            },
+            "outsideordersamples" : {},
+            "multigenotypesamples" : {
+               "Progeny-23" : [
+                  [
+                     "DY17-1234",
+                     "1",
+                     "A",
+                     "4"
+                  ],
+                  [
+                     "DY17-1234",
+                     "1",
+                     "B",
+                     "9"
+                  ]
+               ]
+            }
+         }
+      },
+      "Report_DY17-1234_SNP_1.csv" : {
+         "filetype" : "SNP",
+         "exportdetails" : {
+            "metacolsdetails" : {
+               "SNP" : "In 2 rows format: this column is blank in the Reference row, and contains the base position and base variant details in the SNP row. In 1 row format: contains the base position and base variant details",
+               "FreqHomSnp" : "The proportion of samples which score as homozygous for the SNP allele",
+               "CallRate" : "The proportion of samples for which the genotype call is either \"1\" or \"0\", rather than \"-\" ",
+               "AlleleSequence" : "In 1 row format: the sequence of the Reference allele. In 2 rows format: the sequence of the Reference allele is in the Ref row, the sequence of the SNP allele in the SNP row",
+               "TrimmedSequence" : "Same as the full sequence, but with removed adapters in short marker tags",
+               "OneRatioRef" : "The proportion of samples for which the genotype score is \"1\", in the Reference allele row",
+               "AvgCountRef" : "The sum of the tag read counts for all samples, divided by the number of samples with non-zero tag read counts, for the Reference allele row",
+               "FreqHets" : "The proportion of samples which score as heterozygous.",
+               "AvgCountSnp" : "The sum of the tag read counts for all samples, divided by the number of samples with non-zero tag read counts, for the SNP allele row",
+               "AlleleID" : "Unique identifier for the sequence in which the SNP marker occurs",
+               "AvgPIC" : "The average of the polymorphism information content (PIC) of the Reference and SNP allele rows",
+               "RepAvg" : "The proportion of technical replicate assay pairs for which the marker score is consistent",
+               "FreqHomRef" : "The proportion of samples which score as homozygous for the Reference allele",
+               "PICSnp" : "The polymorphism information content (PIC) for the SNP allele row",
+               "PICRef" : "The polymorphism information content (PIC) for the Reference allele row",
+               "SnpPosition" : "The position (zero indexed) in the sequence tag at which the defined SNP variant base occurs",
+               "OneRatioSnp" : "The proportion of samples for which the genotype score is \"1\", in the SNP allele row"
+            },
+            "headerrowsnumber" : 7,
+            "lastdatacol" : 119,
+            "notdescribedmetacolumns" : 0,
+            "idcolposition" : 1,
+            "firstdatacol" : 30,
+            "alncoldetails" : {
+               "Chrom_" : "Contig(s) with the best alignment of marker / tag to an existing model genome",
+               "AlnEvalue_" : "E value of the best alignment to an existing model genome",
+               "ChromPos_" : "Position(s) on contig(s) with the best alignment of marker / tag to an existing model genome",
+               "AlnCnt_" : "Total count of aligning markers / tags with selection criteria described below"
+            },
+            "metacolspositions" : [
+               "2",
+               "3",
+               "4",
+               "5",
+               "6",
+               "7",
+               "8",
+               "9",
+               "10",
+               "11",
+               "12",
+               "13",
+               "14",
+               "15",
+               "16",
+               "17",
+               "18",
+               "19",
+               "20",
+               "21",
+               "22",
+               "23",
+               "24",
+               "25",
+               "26",
+               "27",
+               "28",
+               "29"
+            ],
+            "headerrowsdescr" : {
+               "6" : "genotype name",
+               "4" : "well column position",
+               "1" : "DArT plate barcode",
+               "3" : "well row position",
+               "0" : "Order number where sample belongs to - important for multi-orders reports",
+               "2" : "client plate barcode",
+               "5" : "sample comments"
+            },
+            "modelreferences" : {
+               "YourSpecies_v01" : "",
+               "YourSpecies_T_alta" : "",
+               "YourSpecies_T_rotundata" : ""
+            }
+         },
+         "description" : "SNP 2 Rows Format: Each allele scored in a binary fashion (\"1\"=Presence and \"0\"=Absence). Heterozygotes are therefore scored as 1/1 (presence for both alleles/both rows)",
+         "exportsnp" : {
+            "filename" : "Report_DY17-1234_SNP_singlerow_1.csv",
+            "type" : "vcf",
+            "description" : "standard vcf format - version 4.2"
+         },
+         "sampleheaders" : {
+            "notreportedsamples" : {},
+            "headers" : {
+               "904317125001_G_6" : [
+                  "904317125001",
+                  "1",
+                  "G",
+                  "6",
+                  "Progeny-48",
+                  "YourSpecies",
+                  "745749",
+                  "Cross  Tube 47",
+                  "2712"
+               ],
+               "904317125001_E_3" : [
+                  "904317125001",
+                  "1",
+                  "E",
+                  "3",
+                  "Progeny-89",
+                  "YourSpecies",
+                  "745723",
+                  "Cross  Tube 21",
+                  "2712"
+               ],
+               "904317125001_D_8" : [
+                  "904317125001",
+                  "1",
+                  "D",
+                  "8",
+                  "Progeny-54",
+                  "YourSpecies",
+                  "745762",
+                  "Cross  Tube 60",
+                  "2712"
+               ],
+               "904317125001_A_10" : [
+                  "904317125001",
+                  "1",
+                  "A",
+                  "10",
+                  "Parent 1-TDa05/00015",
+                  "YourSpecies",
+                  "745775",
+                  "Cross  Tube 73. Parent.",
+                  "2712"
+               ],
+               "904317125001_D_4" : [
+                  "904317125001",
+                  "1",
+                  "D",
+                  "4",
+                  "Progeny-68",
+                  "YourSpecies",
+                  "745730",
+                  "Cross  Tube 28",
+                  "2712"
+               ],
+               "904317125001_B_7" : [
+                  "904317125001",
+                  "1",
+                  "B",
+                  "7",
+                  "Progeny-136",
+                  "YourSpecies",
+                  "745752",
+                  "Cross  Tube 50",
+                  "2712"
+               ],
+               "904317125001_E_9" : [
+                  "904317125001",
+                  "1",
+                  "E",
+                  "9",
+                  "Progeny-26",
+                  "YourSpecies",
+                  "745771",
+                  "Cross  Tube 69",
+                  "2712"
+               ],
+               "904317125001_G_8" : [
+                  "904317125001",
+                  "1",
+                  "G",
+                  "8",
+                  "Progeny-3",
+                  "YourSpecies",
+                  "745765",
+                  "Cross  Tube 63",
+                  "2712"
+               ],
+               "904317125001_B_5" : [
+                  "904317125001",
+                  "1",
+                  "B",
+                  "5",
+                  "Progeny-19",
+                  "YourSpecies",
+                  "745736",
+                  "Cross  Tube 34",
+                  "2712"
+               ],
+               "904317125001_G_7" : [
+                  "904317125001",
+                  "1",
+                  "G",
+                  "7",
+                  "Progeny-33",
+                  "YourSpecies",
+                  "745757",
+                  "Cross  Tube 55",
+                  "2712"
+               ],
+               "904317125001_H_4" : [
+                  "904317125001",
+                  "1",
+                  "H",
+                  "4",
+                  "Progeny-141",
+                  "YourSpecies",
+                  "745734",
+                  "Cross  Tube 32",
+                  "2712"
+               ],
+               "904317125001_F_9" : [
+                  "904317125001",
+                  "1",
+                  "F",
+                  "9",
+                  "Progeny-31",
+                  "YourSpecies",
+                  "745772",
+                  "Cross  Tube 70",
+                  "2712"
+               ],
+               "904317125001_F_7" : [
+                  "904317125001",
+                  "1",
+                  "F",
+                  "7",
+                  "Progeny-157",
+                  "YourSpecies",
+                  "745756",
+                  "Cross  Tube 54",
+                  "2712"
+               ],
+               "904317125001_E_6" : [
+                  "904317125001",
+                  "1",
+                  "E",
+                  "6",
+                  "Progeny-73",
+                  "YourSpecies",
+                  "745747",
+                  "Cross  Tube 45",
+                  "2712"
+               ],
+               "904317125001_H_5" : [
+                  "904317125001",
+                  "1",
+                  "H",
+                  "5",
+                  "Progeny-140",
+                  "YourSpecies",
+                  "745742",
+                  "Cross  Tube 40",
+                  "2712"
+               ],
+               "904317125001_G_3" : [
+                  "904317125001",
+                  "1",
+                  "G",
+                  "3",
+                  "Progeny-4",
+                  "YourSpecies",
+                  "745725",
+                  "Cross  Tube 23",
+                  "2712"
+               ],
+               "904317125001_D_2" : [
+                  "904317125001",
+                  "1",
+                  "D",
+                  "2",
+                  "Progeny-120",
+                  "YourSpecies",
+                  "745714",
+                  "Cross  Tube 12",
+                  "2712"
+               ],
+               "904317125001_C_3" : [
+                  "904317125001",
+                  "1",
+                  "C",
+                  "3",
+                  "Progeny-21",
+                  "YourSpecies",
+                  "745721",
+                  "Cross  Tube 19",
+                  "2712"
+               ],
+               "904317125001_B_8" : [
+                  "904317125001",
+                  "1",
+                  "B",
+                  "8",
+                  "Progeny-15",
+                  "YourSpecies",
+                  "745760",
+                  "Cross  Tube 58",
+                  "2712"
+               ],
+               "904317125001_G_9" : [
+                  "904317125001",
+                  "1",
+                  "G",
+                  "9",
+                  "Progeny-81",
+                  "YourSpecies",
+                  "745773",
+                  "Cross  Tube 71",
+                  "2712"
+               ],
+               "904317125001_E_8" : [
+                  "904317125001",
+                  "1",
+                  "E",
+                  "8",
+                  "Progeny-51",
+                  "YourSpecies",
+                  "745763",
+                  "Cross  Tube 61",
+                  "2712"
+               ],
+               "904317125001_H_2" : [
+                  "904317125001",
+                  "1",
+                  "H",
+                  "2",
+                  "Progeny-43",
+                  "YourSpecies",
+                  "745718",
+                  "Cross  Tube 16",
+                  "2712"
+               ],
+               "904317125001_B_10" : [
+                  "904317125001",
+                  "1",
+                  "B",
+                  "10",
+                  "Parent 2-TDa02/00012",
+                  "YourSpecies",
+                  "745776",
+                  "Cross  Tube 74. Parent.",
+                  "2712"
+               ],
+               "904317125001_F_1" : [
+                  "904317125001",
+                  "1",
+                  "F",
+                  "1",
+                  "Progeny-44",
+                  "YourSpecies",
+                  "745708",
+                  "Cross  Tube 6",
+                  "2712"
+               ],
+               "904317125001_A_5" : [
+                  "904317125001",
+                  "1",
+                  "A",
+                  "5",
+                  "Progeny-87",
+                  "YourSpecies",
+                  "745735",
+                  "Cross  Tube 33",
+                  "2712"
+               ],
+               "904317125001_C_8" : [
+                  "904317125001",
+                  "1",
+                  "C",
+                  "8",
+                  "Progeny-94",
+                  "YourSpecies",
+                  "745761",
+                  "Cross  Tube 59",
+                  "2712"
+               ],
+               "904317125001_A_3" : [
+                  "904317125001",
+                  "1",
+                  "A",
+                  "3",
+                  "Progeny-30",
+                  "YourSpecies",
+                  "745719",
+                  "Cross  Tube 17",
+                  "2712"
+               ],
+               "904317125001_B_4" : [
+                  "904317125001",
+                  "1",
+                  "B",
+                  "4",
+                  "Progeny-103",
+                  "YourSpecies",
+                  "745728",
+                  "Cross  Tube 26",
+                  "2712"
+               ],
+               "904317125001_H_7" : [
+                  "904317125001",
+                  "1",
+                  "H",
+                  "7",
+                  "Progeny-133",
+                  "YourSpecies",
+                  "745758",
+                  "Cross  Tube 56",
+                  "2712"
+               ],
+               "904317125001_C_4" : [
+                  "904317125001",
+                  "1",
+                  "C",
+                  "4",
+                  "Progeny-37",
+                  "YourSpecies",
+                  "745729",
+                  "Cross  Tube 27",
+                  "2712"
+               ],
+               "904317125001_B_2" : [
+                  "904317125001",
+                  "1",
+                  "B",
+                  "2",
+                  "Progeny-130",
+                  "YourSpecies",
+                  "745712",
+                  "Cross  Tube 10",
+                  "2712"
+               ],
+               "904317125001_A_4" : [
+                  "904317125001",
+                  "1",
+                  "A",
+                  "4",
+                  "Progeny-23",
+                  "YourSpecies",
+                  "745727",
+                  "Cross  Tube 25",
+                  "2712"
+               ],
+               "904317125001_H_8" : [
+                  "904317125001",
+                  "1",
+                  "H",
+                  "8",
+                  "Progeny-46",
+                  "YourSpecies",
+                  "745766",
+                  "Cross  Tube 64",
+                  "2712"
+               ],
+               "904317125001_H_6" : [
+                  "904317125001",
+                  "1",
+                  "H",
+                  "6",
+                  "Progeny-29",
+                  "YourSpecies",
+                  "745750",
+                  "Cross  Tube 48",
+                  "2712"
+               ],
+               "904317125001_H_1" : [
+                  "904317125001",
+                  "1",
+                  "H",
+                  "1",
+                  "Progeny-39",
+                  "YourSpecies",
+                  "745710",
+                  "Cross  Tube 8",
+                  "2712"
+               ],
+               "904317125001_B_6" : [
+                  "904317125001",
+                  "1",
+                  "B",
+                  "6",
+                  "Progeny-119",
+                  "YourSpecies",
+                  "745744",
+                  "Cross  Tube 42",
+                  "2712"
+               ],
+               "904317125001_D_5" : [
+                  "904317125001",
+                  "1",
+                  "D",
+                  "5",
+                  "Progeny-99",
+                  "YourSpecies",
+                  "745738",
+                  "Cross  Tube 36",
+                  "2712"
+               ],
+               "904317125001_H_9" : [
+                  "904317125001",
+                  "1",
+                  "H",
+                  "9",
+                  "Progeny-5",
+                  "YourSpecies",
+                  "745774",
+                  "Cross  Tube 72",
+                  "2712"
+               ],
+               "904317125001_E_4" : [
+                  "904317125001",
+                  "1",
+                  "E",
+                  "4",
+                  "Progeny-2",
+                  "YourSpecies",
+                  "745731",
+                  "Cross  Tube 29",
+                  "2712"
+               ],
+               "904317125001_A_2" : [
+                  "904317125001",
+                  "1",
+                  "A",
+                  "2",
+                  "Progeny-50",
+                  "YourSpecies",
+                  "745711",
+                  "Cross  Tube 9",
+                  "2712"
+               ],
+               "904317125001_F_6" : [
+                  "904317125001",
+                  "1",
+                  "F",
+                  "6",
+                  "Progeny-67",
+                  "YourSpecies",
+                  "745748",
+                  "Cross  Tube 46",
+                  "2712"
+               ],
+               "904317125001_G_1" : [
+                  "904317125001",
+                  "1",
+                  "G",
+                  "1",
+                  "Progeny-124",
+                  "YourSpecies",
+                  "745709",
+                  "Cross  Tube 7",
+                  "2712"
+               ],
+               "904317125001_B_3" : [
+                  "904317125001",
+                  "1",
+                  "B",
+                  "3",
+                  "Progeny-76",
+                  "YourSpecies",
+                  "745720",
+                  "Cross  Tube 18",
+                  "2712"
+               ],
+               "904317125001_C_7" : [
+                  "904317125001",
+                  "1",
+                  "C",
+                  "7",
+                  "Progeny-127",
+                  "YourSpecies",
+                  "745753",
+                  "Cross  Tube 51",
+                  "2712"
+               ],
+               "904317125001_F_3" : [
+                  "904317125001",
+                  "1",
+                  "F",
+                  "3",
+                  "Progeny-145",
+                  "YourSpecies",
+                  "745724",
+                  "Cross  Tube 22",
+                  "2712"
+               ],
+               "904317125001_D_1" : [
+                  "904317125001",
+                  "1",
+                  "D",
+                  "1",
+                  "Progeny-32",
+                  "YourSpecies",
+                  "745706",
+                  "Cross  Tube 4",
+                  "2712"
+               ],
+               "904317125001_F_2" : [
+                  "904317125001",
+                  "1",
+                  "F",
+                  "2",
+                  "Progeny-8",
+                  "YourSpecies",
+                  "745716",
+                  "Cross  Tube 14",
+                  "2712"
+               ],
+               "904317125001_C_1" : [
+                  "904317125001",
+                  "1",
+                  "C",
+                  "1",
+                  "Progeny-115",
+                  "YourSpecies",
+                  "745705",
+                  "Cross  Tube 3",
+                  "2712"
+               ],
+               "904317125001_E_7" : [
+                  "904317125001",
+                  "1",
+                  "E",
+                  "7",
+                  "Progeny-40",
+                  "YourSpecies",
+                  "745755",
+                  "Cross  Tube 53",
+                  "2712"
+               ],
+               "904317125001_G_5" : [
+                  "904317125001",
+                  "1",
+                  "G",
+                  "5",
+                  "Progeny-111",
+                  "YourSpecies",
+                  "745741",
+                  "Cross  Tube 39",
+                  "2712"
+               ],
+               "904317125001_F_8" : [
+                  "904317125001",
+                  "1",
+                  "F",
+                  "8",
+                  "Progeny-85",
+                  "YourSpecies",
+                  "745764",
+                  "Cross  Tube 62",
+                  "2712"
+               ],
+               "904317125001_F_5" : [
+                  "904317125001",
+                  "1",
+                  "F",
+                  "5",
+                  "Progeny-131",
+                  "YourSpecies",
+                  "745740",
+                  "Cross  Tube 38",
+                  "2712"
+               ],
+               "904317125001_G_4" : [
+                  "904317125001",
+                  "1",
+                  "G",
+                  "4",
+                  "Progeny-142",
+                  "YourSpecies",
+                  "745733",
+                  "Cross  Tube 31",
+                  "2712"
+               ],
+               "904317125001_C_9" : [
+                  "904317125001",
+                  "1",
+                  "C",
+                  "9",
+                  "Progeny-143",
+                  "YourSpecies",
+                  "745769",
+                  "Cross  Tube 67",
+                  "2712"
+               ],
+               "904317125001_E_1" : [
+                  "904317125001",
+                  "1",
+                  "E",
+                  "1",
+                  "Progeny-151",
+                  "YourSpecies",
+                  "745707",
+                  "Cross  Tube 5",
+                  "2712"
+               ],
+               "904317125001_D_3" : [
+                  "904317125001",
+                  "1",
+                  "D",
+                  "3",
+                  "Progeny-137",
+                  "YourSpecies",
+                  "745722",
+                  "Cross  Tube 20",
+                  "2712"
+               ],
+               "904317125001_C_5" : [
+                  "904317125001",
+                  "1",
+                  "C",
+                  "5",
+                  "Progeny-53",
+                  "YourSpecies",
+                  "745737",
+                  "Cross  Tube 35",
+                  "2712"
+               ],
+               "904317125001_A_7" : [
+                  "904317125001",
+                  "1",
+                  "A",
+                  "7",
+                  "Progeny-27",
+                  "YourSpecies",
+                  "745751",
+                  "Cross  Tube 49",
+                  "2712"
+               ],
+               "904317125001_C_2" : [
+                  "904317125001",
+                  "1",
+                  "C",
+                  "2",
+                  "Progeny-77",
+                  "YourSpecies",
+                  "745713",
+                  "Cross  Tube 11",
+                  "2712"
+               ],
+               "904317125001_D_6" : [
+                  "904317125001",
+                  "1",
+                  "D",
+                  "6",
+                  "Progeny-102",
+                  "YourSpecies",
+                  "745746",
+                  "Cross  Tube 44",
+                  "2712"
+               ],
+               "904317125001_B_1" : [
+                  "904317125001",
+                  "1",
+                  "B",
+                  "1",
+                  "Progeny-108",
+                  "YourSpecies",
+                  "745704",
+                  "Cross  Tube 2",
+                  "2712"
+               ],
+               "904317125001_A_6" : [
+                  "904317125001",
+                  "1",
+                  "A",
+                  "6",
+                  "Progeny-113",
+                  "YourSpecies",
+                  "745743",
+                  "Cross  Tube 41",
+                  "2712"
+               ],
+               "904317125001_D_7" : [
+                  "904317125001",
+                  "1",
+                  "D",
+                  "7",
+                  "Progeny-20",
+                  "YourSpecies",
+                  "745754",
+                  "Cross  Tube 52",
+                  "2712"
+               ],
+               "904317125001_A_8" : [
+                  "904317125001",
+                  "1",
+                  "A",
+                  "8",
+                  "Progeny-139",
+                  "YourSpecies",
+                  "745759",
+                  "Cross  Tube 57",
+                  "2712"
+               ],
+               "904317125001_E_5" : [
+                  "904317125001",
+                  "1",
+                  "E",
+                  "5",
+                  "Progeny-59",
+                  "YourSpecies",
+                  "745739",
+                  "Cross  Tube 37",
+                  "2712"
+               ],
+               "904317125001_A_9" : [
+                  "904317125001",
+                  "1",
+                  "A",
+                  "9",
+                  "Progeny-125",
+                  "YourSpecies",
+                  "745767",
+                  "Cross  Tube 65",
+                  "2712"
+               ],
+               "904317125001_G_2" : [
+                  "904317125001",
+                  "1",
+                  "G",
+                  "2",
+                  "Progeny-154",
+                  "YourSpecies",
+                  "745717",
+                  "Cross  Tube 15",
+                  "2712"
+               ],
+               "904317125001_H_3" : [
+                  "904317125001",
+                  "1",
+                  "H",
+                  "3",
+                  "Progeny-16",
+                  "YourSpecies",
+                  "745726",
+                  "Cross  Tube 24",
+                  "2712"
+               ],
+               "904317125001_E_2" : [
+                  "904317125001",
+                  "1",
+                  "E",
+                  "2",
+                  "Progeny-149",
+                  "YourSpecies",
+                  "745715",
+                  "Cross  Tube 13",
+                  "2712"
+               ],
+               "904317125001_C_6" : [
+                  "904317125001",
+                  "1",
+                  "C",
+                  "6",
+                  "Progeny-56",
+                  "YourSpecies",
+                  "745745",
+                  "Cross  Tube 43",
+                  "2712"
+               ],
+               "904317125001_D_9" : [
+                  "904317125001",
+                  "1",
+                  "D",
+                  "9",
+                  "Progeny-11",
+                  "YourSpecies",
+                  "745770",
+                  "Cross  Tube 68",
+                  "2712"
+               ],
+               "904317125001_B_9" : [
+                  "904317125001",
+                  "1",
+                  "B",
+                  "9",
+                  "Progeny-23",
+                  "YourSpecies",
+                  "745768",
+                  "Cross  Tube 66",
+                  "2712"
+               ],
+               "904317125001_A_1" : [
+                  "904317125001",
+                  "1",
+                  "A",
+                  "1",
+                  "Progeny-18",
+                  "YourSpecies",
+                  "745703",
+                  "Cross  Tube 1",
+                  "2712"
+               ],
+               "904317125001_F_4" : [
+                  "904317125001",
+                  "1",
+                  "F",
+                  "4",
+                  "Progeny-112",
+                  "YourSpecies",
+                  "745732",
+                  "Cross  Tube 30",
+                  "2712"
+               ]
+            },
+            "outsideordersamples" : {},
+            "multigenotypesamples" : {
+               "Progeny-23" : [
+                  [
+                     "DY17-1234",
+                     "1",
+                     "A",
+                     "4"
+                  ],
+                  [
+                     "DY17-1234",
+                     "1",
+                     "B",
+                     "9"
+                  ]
+               ]
+            }
+         }
+      }
+   },
+   "company" : {
+      "webpage" : "http://www.diversityarrays.com/",
+      "namefull" : "Diversity Arrays Technology Pty Ltd",
+      "address" : "Building 3, Level D, University of Canberra\nBruce, ACT 2617, Australia"
+   },
+   "blast" : {
+      "evalue" : "5e-7",
+      "modelrefs" : [
+         "Assembly1",
+         "Assembly2",
+         "Assembly3"
+      ],
+      "pctidentity" : "90"
+   }
+}

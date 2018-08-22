@@ -1,0 +1,78 @@
+# The commands below are those that we executed together during the "Hands-on
+# analysis of DArTseq data for linkage mapping" course. Please remember that
+# each command has accompanying information on its usage, which you can view
+# by executing that command without any arguments. For example, to read more
+# about maptk's maptags command, type "maptk maptags" (without the quotes)
+# into the terminal and press the ENTER key. Please also refer to the course
+# slides for background information about the data types and formats, commands,
+# and analysis results and statistics.
+
+# Convert the non-standard DArTseq singlerow.csv genotyping file format to the
+# more-standard VCF format:
+maptk dart2vcf -o snp.vcf -A Assembly SNP_singlerow.csv
+
+
+# If the SNPs are not anchored to the genome assembly you want to analyze on,
+# re-map the SNP tags (DArT representations) to your preferred assembly.
+maptk maptags snp.vcf reference.fasta snptags
+
+
+# The singlerow and other .csv files from DArT are typically sorted by PIC
+# score and not by genomic coordinate; so, whether or not the SNP tags were
+# re-mapped, the VCF file needs to be sorted by CHROM and POS fields:
+grep -e '#' snptags.mapped.vcf >header.vcf
+grep -v -e '#' snptags.mapped.vcf | sort -k1,1 -k2,2g >sorted.vcf
+cat header.vcf sorted.vcf >merged.vcf
+
+
+# NOT COVERED DURING THE COURSE: If the genotyping data contains loci with
+# fewer than half (and 80% is better) of the samples genotyped, remove those 
+# loci from the VCF. The `--max-missing` option name used below is mis-leading;
+# If you want to keep only loci with 80% or more of the samples genotyped, a
+# value of 0.8, not 0.20 as the option name might suggest, should be given:
+mv merged.vcf raw.vcf
+vcftools --max-missing 0.8 --vcf raw.vcf --recode --stdout >merged.vcf
+
+
+# Not all loci genotyped by DArT represent segregating polymorphisms, so we
+# need to identify loci that fit the Mendelian expectation for segregation.
+# This is achieved using a chi-squared goodness-of-fit test:
+maptk chif1 -F -A 20 -G 20 -P Parent1,Parent2 merged.vcf >merged.chif1-A20G20F.vcf
+
+# Remove the loci that do not segregate or appear distorted:
+grep -v 'FAILX2' merged.chif1-A20G20F.vcf >merged.chif1-A20G20F.filtered.vcf
+
+
+# More often than we like, off-types are present in our mapping populations.
+# We can detect the various kinds of off-types by using the genotyping data
+# in a relatedness analysis:
+vcftools --relatedness2 --vcf merged.chif1-A20G20F.filtered.vcf --out merged.chif1-A20G20F.filtered
+maptk mclust -P Parent1,Parent2 merged.chif1-A20G20F.filtered.relatedness2 merged.chif1-A20G20F.filtered
+
+# maptk's mclust command should create plots of relatednesses between the
+# putative offspring (plotted points) and the putative parents of the cross
+# (X and Y axes). Identify the true progeny (at X ~ 0.25, Y ~ 0.25) by class/
+# component number and select them for use in the rest of your analysis. Also,
+# it is imperative that we add the parental IDs back to the list of progeny
+# that we intend to keep:
+awk -v class=YOUR-CLASS-NUMBER-HERE '{if ($4 == class) { print $1 }}' merged.chif1-A20G20F.filtered.dat >F1.keep.list
+echo "Parent1" >>F1.keep.list
+echo "Parent2" >>F1.keep.list
+
+
+# Now use vcftools to select only the samples listed in the above .list file:
+vcftools --keep F1.keep.list --vcf merged.chif1-A20G20F.filtered.vcf --recode --recode-INFO-all --out merged.chif1-A20G20F.filtered
+
+
+# Convert the cleaned-up VCF into OneMap's .raw format:
+maptk vcf2raw -P Parent1,Parent2 -I merged.chif1-A20G20F.filtered.recode.vcf >merged.chif1-A20G20F.filtered.raw
+
+
+# OPTIONAL: Impute and phase genotypes. It is highly recommended to try
+# different phasing tools and parameters, and examine the phasing quality of
+# each with OneMap's visualization tools. For the course we used the (yet
+# unpublished) phaseF1 tool I wrote:
+phaseF1 -P Parent1,Parent2 -o merged.chif1-A20G20F.filtered.phased.vcf merged.chif1-A20G20F.filtered.recode.vcf
+
+maptk vcf2raw -P Parent1,Parent2 -I merged.chif1-A20G20F.filtered.phased.vcf >merged.chif1-A20G20F.filtered.phased.raw
+
