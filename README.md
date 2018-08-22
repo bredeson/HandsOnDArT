@@ -161,6 +161,6 @@ For lecture notes, please see the PDFs attached below, organized by lecture.
 * [Lecture notes and exercises](https://github.com/bredeson/HandsOnDArT/blob/master/lecture_notes_and_exercises/R+OneMap2.pdf)
 
 ## Final slides and Notes
-* [Download from here](https://github.com/bredeson/HandsOnDArT/blob/master/lecture_notes_and_exercises/HandsOnDArT-Complete-FINAL.pdf)
+* [Final slides](https://github.com/bredeson/HandsOnDArT/blob/master/lecture_notes_and_exercises/HandsOnDArT-Complete-FINAL.pdf)
 * [MapTK commands](https://github.com/bredeson/HandsOnDArT/blob/master/lecture_notes_and_exercises/maptk_notes.txt)
 * [OneMap commands](https://github.com/bredeson/HandsOnDArT/blob/master/lecture_notes_and_exercises/onemap_notes.txt)
