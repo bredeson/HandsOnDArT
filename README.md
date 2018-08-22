@@ -64,10 +64,11 @@ The course relies on various software packages, all of which are freely-availabl
 >NOTE: MacOS X/Darwin users will require `make` and `gcc`, available with the [Xcode Command Line Tools]() from the Apple Developer website.
 >NOTE: Windows PC users will require [Cygwin](), a UNIX environment emulator for the Windows command line.
 
-* [VCFtools](https://vcftools.github.io)
-* [R](https://www.r-project.org)
-* [maptk](https://bitbucket.org/rokhsar-lab/gbs-analysis/src/master)
 * [BWA](http://bio-bwa.sourceforge.net)
+* [maptk](https://bitbucket.org/rokhsar-lab/gbs-analysis/)
+* [VCFtools](https://vcftools.github.io)
+* [R](https://cran.r-project.org/mirrors.html)
+* [OneMap R package](https://github.com/augusto-garcia/onemap)
 
 
 # Using UNIX
