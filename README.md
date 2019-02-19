@@ -35,8 +35,8 @@ __Table of Contents__
 ---
 
 # Announcements
-* **2019-2-18**: A Parsing error was detected in `maptk dart2vcf` version v1.1-30 and older (use `git describe --tags` in the `gbs-analysis` directory to determine the version you have). This version incorrectly parsed singlerow CSV files. **It is critical you re-parse your data with the latest maptk version**
-* **2019-2-18**: `maptk dart2vcf` now parses two-row DArT CSV format, use the `-2` flag. Files must have ref and allele tags on consecutive lines in the two-row file (as they are when you receive them). 
+* **2019-2-18**: A Parsing error was detected in `maptk dart2vcf` from `gbs-analysis` version v1.1 and older. This version incorrectly parsed singlerow CSV files. **It is critical you re-parse your data with the latest `maptk` from `gbs-analysis` v1.2**, i.e. `cd gbs-analysis && git pull origin master`.
+* **2019-2-18**: `maptk dart2vcf` from the `gbs-analysis` repo now parses two-row DArT CSV format, use the `-2` flag. Files must have ref and allele tags on consecutive lines in the two-row file (as when you received the reports). 
 
 # Welcome!
 ## About the course
