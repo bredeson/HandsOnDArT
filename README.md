@@ -14,7 +14,7 @@ University of California, Berkeley, CA, USA
 ---
 
 __Table of Contents__
-
+   * [Announcements](#announcements)
    * [Welcome!](#welcome)
       * [About the course](#about-the-course)
       * [Course Topics](#course-topics)
@@ -33,6 +33,10 @@ __Table of Contents__
       * [R and OneMap 2](#r-and-onemap-2)
    * [Final slides and notes](#final-slides-and-notes)
 ---
+
+# Announcements
+* **2019-2-18**: A Parsing error was detected in `maptk dart2vcf` version v1.1-30 and older (use `git describe --tags` in the `gbs-analysis` directory to determine the version you have). This version incorrectly parsed singlerow CSV files. **It is critical you re-parse your data with the latest maptk version**
+* **2019-2-18**: `maptk dart2vcf` now parses two-row DArT CSV format, use the `-2` flag. Files must have ref and allele tags on consecutive lines in the two-row file (as they are when you receive them). 
 
 # Welcome!
 ## About the course
